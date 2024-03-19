@@ -11,3 +11,10 @@ vim.keymap.set("n", "<leader>cr", ":IncRename ")
 
 -- remove ^M
 vim.keymap.set("n", "<leader>cc", ":%s/\r$//g <CR>")
+
+-- delete without yanking, blackhole
+vim.keymap.set("v", "d", '"_d')
+vim.keymap.set("n", "dd", '"_dd')
+
+-- neotree
+vim.keymap.set("n", "<leader>e", ":Neotree toggle position=right <CR>")
