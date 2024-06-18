@@ -7,17 +7,26 @@ return {
       return {
         transparent = true,
       }
-    end
+    end,
   },
   {
     "catppuccin/nvim",
     lazy = true,
     priority = 1000,
-    flavour = "mocha"
+    flavour = "mocha",
   },
   {
     "rebelot/kanagawa.nvim",
     lazy = true,
     priority = 1000,
-  }
+  },
+  {
+    "morhetz/gruvbox",
+    lazy = true,
+    priority = 1000,
+    config = function()
+      vim.g.gruvbox_contrast_dark = "hard"
+      vim.g.gruvbox_italicize_strings = "1"
+    end,
+  },
 }
