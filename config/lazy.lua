@@ -3,7 +3,7 @@ local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 -- require 'nvim-treesitter.install'.compilers = { "clang" }
 -- require("nvim-surround").setup()
-  
+
 if not vim.loop.fs_stat(lazypath) then
   -- bootstrap lazy.nvim
   -- stylua: ignore
@@ -19,7 +19,7 @@ require("lazy").setup({
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
       opts = {
-        colorscheme = "kanagawa-wave",
+        colorscheme = "gruvbox",
       },
     },
     -- import any extras modules here

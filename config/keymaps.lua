@@ -3,8 +3,9 @@
 -- Add any additional keymaps here
 
 -- mode, key, command, extra
-vim.keymap.set("n", "<C-t>", ":ToggleTerm <CR>", { desc = "Toggle Terminal" })
+vim.keymap.set("n", "<C-t>", "<C-\\><C-n>:ToggleTerm <CR>", { desc = "Toggle Terminal" })
 vim.keymap.set("n", "<C-s>", ":w <CR>", { desc = "Save current buffer" })
+vim.keymap.set('t', '<C-t>', '<C-\\><C-n>:ToggleTerm <CR>', { desc = "Exit insert mode" })
 
 -- rename
 vim.keymap.set("n", "<leader>cr", ":IncRename ")
